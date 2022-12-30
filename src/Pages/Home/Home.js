@@ -23,7 +23,7 @@ const Home = () => {
 
     
     useEffect(() => {
-        fetch('http://localhost:5000/getposts')
+        fetch('https://server-ochre-seven.vercel.app/getposts')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -57,7 +57,7 @@ const Home = () => {
 
             console.log(addData);
 
-            fetch(`http://localhost:5000/addpost`, {
+            fetch(`https://server-ochre-seven.vercel.app/addpost`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

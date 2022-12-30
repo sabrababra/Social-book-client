@@ -63,7 +63,7 @@ const SignUp = () => {
                                     console.log(loginData);
 
                                     if (user?.uid) {
-                                        fetch(`http://localhost:5000/user/${user?.email}`, {
+                                        fetch(`https://server-ochre-seven.vercel.app/user/${user?.email}`, {
                                             method: 'PUT',
                                             headers: {
                                                 'content-type': 'application/json'

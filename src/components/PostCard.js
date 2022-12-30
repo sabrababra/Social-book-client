@@ -35,7 +35,7 @@ const PostCard = ({ item, getData }) => {
                 }
             ]
 
-            fetch(`http://localhost:5000/updatepost/${_id}`, {
+            fetch(`https://server-ochre-seven.vercel.app/updatepost/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'

@@ -6,7 +6,7 @@ const Media = () => {
     const [posts, setPost] = useState([]);
 
     const getData = () => {
-        fetch('http://localhost:5000/getposts')
+        fetch('https://server-ochre-seven.vercel.app/getposts')
             .then(res => res.json())
             .then(data => {
                 console.log(data);

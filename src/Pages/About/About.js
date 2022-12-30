@@ -7,7 +7,7 @@ const About = () => {
 
     useEffect(() => {
         if (user?.email) {
-            fetch(`http://localhost:5000/getUser?email=${user?.email}`)
+            fetch(`https://server-ochre-seven.vercel.app/getUser?email=${user?.email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
